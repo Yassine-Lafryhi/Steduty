@@ -50,7 +50,7 @@ $header_status = steduty_get_option( 'show_top_header' );
 									<div class="search-icon">
 										<a href="#" id="mobile-search"><i class="fa fa-search" aria-hidden="true"></i></a>
 									</div>
-							
+
 									 <div id="mobile-search-popup" class="search-off full-search-wrapper">
 										<div id="search" class="open">
 											<button data-widget="remove" id="close-icon" class="close" type="button"><i class="fa fa-times" aria-hidden="true"></i></button>
@@ -63,16 +63,16 @@ $header_status = steduty_get_option( 'show_top_header' );
 					</div>
 				</div>
 			</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+
+
+
+
+
+
+
+
+
+
 			<div class="header-top">
                     <div class="container">
                         <div class="row">
@@ -82,13 +82,13 @@ $header_status = steduty_get_option( 'show_top_header' );
                             <div class="menu-top-header-menu-container">
                             <ul id="top-header" class="main-menu">
 <li id="menu-item-105" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-105">
-<a title="" href="#">Menu 1</a></li>
+<a title="" href="#">Accueil</a></li>
 <li id="menu-item-104" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-104">
-<a title="" href="#">Menu 2</a></li>
+<a title="" href="#">Bibliothèque</a></li>
 <li id="menu-item-106" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-106">
-<a title="" href="#">Menu 3</a></li>
+<a title="" href="#">Bureau Des Étudiants</a></li>
 <li id="menu-item-115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115">
-<a title="" href="#">Menu 4</a></li>
+<a title="" href="#">Clubs De La ESTSB</a></li>
 </ul></div>                        </nav>
                     </div><!-- .navigation-section -->
                         </div>
@@ -102,33 +102,31 @@ $header_status = steduty_get_option( 'show_top_header' );
 <a title="" href="http://www.linkedin.com">Linkedin</a></li>
 <li id="menu-item-95" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-95">
 <a title="" href="http://www.instagram.com">Instagram</a></li>
-<li id="menu-item-96" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96">
-<a title="" href="http://www.dribble.com">Dribble</a></li>
-</ul></div>                 
-               
+</ul></div>
+
             		</div>
-	
+
                         </div>
                     </div>
                 </div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			<?php if( $header_status == '1' ): ?>
                 <div class="header-top">
                     <div class="container">
@@ -144,7 +142,7 @@ $header_status = steduty_get_option( 'show_top_header' );
             <div class="header-logo">
                 <div class="container">
                     <div class="row">
-                    	<div class="col-lg-12 col-sm-12 desktop-logo">
+                    	<div class="col-lg-12 col-sm-12 desktop-logo" style="display: flex;">
 							<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
 						</div>
 				  	</div>
@@ -153,7 +151,7 @@ $header_status = steduty_get_option( 'show_top_header' );
 
 			<div class="header-menu">
                 <div class="container">
-                    <div class="row">	  	
+                    <div class="row">
                         <div class="col-lg-12">
                             <?php if ( has_nav_menu( 'primary' ) ) : ?>
                                 <div class="navigation-section">
@@ -162,30 +160,30 @@ $header_status = steduty_get_option( 'show_top_header' );
                                             'theme_location' => 'primary',
                                             'menu_id'        => 'primary-menu',
                                             'menu_class' 	 => 'main-menu',
-                                        ) ); 
+                                        ) );
                                         ?>
                                     </nav>
                                 </div><!-- .navigation-section -->
                             <?php endif; ?>
-							
+
 							<div class="mini-search-icon">
 								<a href="#" id="search-icon"><i class="fa fa-search" aria-hidden="true"></i></a>
 							</div>
-							
+
 							 <div id="search-popup" class="search-off full-search-wrapper">
             					<div id="search" class="open">
             						<button data-widget="remove" id="removeClass" class="close" type="button"><i class="fa fa-times" aria-hidden="true"></i></button>
 									<?php echo get_search_form(); ?>
 								</div>
 							</div>
-							
+
                         </div>
                     </div>
                 </div>
             </div>
 		</div>
 	</header><!-- #masthead -->
-    
+
 	<?php if( !is_front_page()):  ?>
         <section class="page-header jumbotron">
             <div class="container">
@@ -193,29 +191,27 @@ $header_status = steduty_get_option( 'show_top_header' );
                     <div class="col-lg-12">
                         <?php if(is_page() || is_single() ){ ?>
                                 <h1 class="page-title"><?php echo esc_html( get_the_title() ); ?></h1>
-    
+
                             <?php } elseif( is_search() ){ ?>
-        
+
                             <h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'steduty' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-        
+
                             <?php }elseif( is_404() ){ ?>
-        
+
                             <h1 class="page-title"><?php echo esc_html( 'Page Not Found: 404', 'steduty'); ?></h1>
-        
+
                             <?php }elseif( is_home() ){ ?>
-        
+
                             <h1 class="page-title"><?php single_post_title(); ?></h1>
-        
+
                             <?php } else{
-        
+
                                 the_archive_title( '<h1 class="page-title">', '</h1>' );
                             }
                         ?>
-                       
+
                     </div>
                 </div>
             </div>
         </section>
     <?php endif; ?>
-	
-	

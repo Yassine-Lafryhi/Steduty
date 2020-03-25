@@ -5246,7 +5246,7 @@ article.post header.entry-header {
 .page-header.jumbotron {
     color: #000;
     margin-bottom: 0;
-    padding: 35px 25px 0;
+    padding: 35px 0 0;
     border-radius: 0;
     background: #f6f6f6;
 }
