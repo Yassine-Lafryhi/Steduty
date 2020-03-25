@@ -164,7 +164,7 @@ $sidebar_class = steduty_get_option( 'steduty_sidebar' );
 			
 
 			<?php if(get_theme_mod('home_sidebar')==false) : ?> 
-			<!--
+
 			   <div class="col-md-4">    
                
                 <?php get_sidebar(); ?>
@@ -224,10 +224,10 @@ $sidebar_class = steduty_get_option( 'steduty_sidebar' );
 					
 					
 					 <div class="col-lg-6">
-                                
+
                             <h1 class="page-title">Témoignage</h1>
-        
-                                                   
+
+
                     </div>
                 </div>
             </div>

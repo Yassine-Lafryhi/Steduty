@@ -154,8 +154,8 @@ function steduty_customize_register( $wp_customize ) {
 				'priority'	  => 3,
 				'choices'     => array(
 					'Simple'  => esc_html__('Simple Style Layout','steduty'),
-					'Grid'    => esc_html__('Grid Style Layout  [Premium Version]','steduty'),
-					'List'    => esc_html__('List Style Layout [Premium Version]','steduty'),
+					'Grid'    => esc_html__('Grid Style Layout','steduty'),
+					'List'    => esc_html__('List Style Layout','steduty'),
 					
 				)
 			)

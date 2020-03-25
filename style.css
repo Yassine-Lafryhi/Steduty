@@ -13,7 +13,7 @@ Text Domain:    Steduty
 
 
 html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     line-height: 1.8;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -21,7 +21,7 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 15px;
     font-weight: 400;
     background-color: #f6f6f6;
@@ -36,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato", sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 700;
 }
 
@@ -2470,6 +2470,9 @@ a:focus {
 .widget ul {
     list-style: none;
     margin: 0;
+/*TODO :*/
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .widget ul li,
@@ -3714,6 +3717,11 @@ ul.side-newsfeed li + li {
 .entry-content p, .entry-content blockquote {
     color: #3b3d3f;
     text-align: justify;
+
+/*TODO: */
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+
 }
 
 .about-me img {
@@ -4973,6 +4981,7 @@ ul#top-header {
     font-weight: 900 !important;
     margin-bottom: 20px;
     font-size: 1.1em !important;
+    text-align: center;
 }
 
 .widget .widget-title:before {
@@ -5105,6 +5114,10 @@ article.post {
 .steduty-post-grid .entry-header .entry-title {
     margin-bottom: 10px;
     margin-top: 15px;
+    text-align: center;
+/*TODO */
+
+    font-family: 'Tajawal', sans-serif;
 }
 
 .steduty-post-grid .entry-header .entry-meta {
@@ -5118,10 +5131,11 @@ article.post {
 
 .steduty-post-grid .entry-content .read-more {
     margin-top: 15px;
+    text-align: center;
 }
 
 .steduty-post-grid .entry-content .read-more .link {
-    font-family: "Lato", sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 0.857em;
     font-weight: 700;
     letter-spacing: 1px;
