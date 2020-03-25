@@ -1,37 +1,30 @@
 <?php
 /**
- * The template for displaying the footer
- * @package steduty
- * @version 1.0.0
+ * The template for displaying the footer.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package EduPress
  */
+
+$estsb_logo = get_template_directory_uri() . '/assets/images/logo_estsb.jpg';
 
 ?>
 
-<!--================================
-        START FOOTER AREA
-    =================================-->
-    <footer class="footer-area">
-           
-      <?php get_template_part( 'template-parts/footer/site', 'info' ); ?>
+<footer class="site-footer" role="contentinfo">
 
-    </footer>
-    
-<!--================================
-    END FOOTER AREA
-    =================================-->
-	
-</div><!-- #page -->
-<a href="#page" class="back-to-top" id="back-to-top" style="display: block;"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-<?php $back_to_top_type = steduty_get_option( 'back_to_top_type' );
+    <?php get_sidebar( 'footer' ); ?>
 
-if($back_to_top_type == 'enable'): ?>
+    <div class="wrapper wrapper-copy">
+        <p class="copy"><?php _e('Copyright &copy;','edupress');?> <?php echo date_i18n(__("Y","edupress")); ?> <?php bloginfo('name'); ?>. <?php _e('All Rights Reserved', 'edupress');?>. </p>
+        <p class="copy-ilovewp"><span class="theme-credit"><?php _e( 'Theme by', 'edupress' ); ?><a href="http://www.estsb.ucd.ac.ma/" rel="nofollow external designer noopener" class="footer-logo-ilovewp"><img src="<?php echo esc_url($estsb_logo); ?>" width="150" height="11" alt="<?php esc_attr_e('Education WordPress Theme', 'edupress');?>" /></a></span></p>
+    </div><!-- .wrapper .wrapper-copy -->
 
-<a href="#page" class="back-to-top" id="back-to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+</footer><!-- .site-footer -->
 
-<?php endif; ?>
+</div><!-- end #container -->
 
 <?php wp_footer(); ?>
 
 </body>
-
 </html>
