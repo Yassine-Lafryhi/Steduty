@@ -1,20 +1,10 @@
 <?php
-/**
- * The template for displaying the footer
- * @package steduty
- * @version 1.0.0
- */
+
+$estsb_logo = get_template_directory_uri() . '/assets/images/logo_estsb.jpg';
 
 ?>
 
-<!--================================
-        START FOOTER AREA
-    =================================-->
-    <footer class="footer-area">
-
-      <?php get_template_part( 'template-parts/footer/site', 'info' ); ?>
-
-    </footer>
+<footer class="site-footer" role="contentinfo" >
 
     <div class="container">
 
@@ -48,7 +38,7 @@
             <div class="col-sm-3" id="text_footer">
                 <h2>MAP</h2>
                 <p>
-                   <a href="https://goo.gl/maps/S4diMa1aXDnbjvZo7" > <img  class="border border-success" src="<?php bloginfo('template_url'); ?>/assets/images/adress_est.png"></a>
+                    <a href="https://goo.gl/maps/S4diMa1aXDnbjvZo7" > <img  class="border border-success" src="<?php bloginfo('template_url'); ?>/assets/images/adress_est.png"></a>
                 </p>
             </div>
         </div>
@@ -60,12 +50,9 @@
     </div>
 </footer><!-- .site-footer -->
 
-<a href="#page" class="back-to-top" id="back-to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-
-<?php endif; ?>
+</div><!-- end #container -->
 
 <?php wp_footer(); ?>
 
 </body>
-
 </html>
