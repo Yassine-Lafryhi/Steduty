@@ -1,17 +1,20 @@
 <?php
 /**
- * The template for displaying the footer.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package EduPress
+ * The template for displaying the footer
+ * @package steduty
+ * @version 1.0.0
  */
-
-$estsb_logo = get_template_directory_uri() . '/assets/images/logo_estsb.jpg';
 
 ?>
 
-<footer class="site-footer" role="contentinfo" >
+<!--================================
+        START FOOTER AREA
+    =================================-->
+    <footer class="footer-area">
+
+      <?php get_template_part( 'template-parts/footer/site', 'info' ); ?>
+
+    </footer>
 
     <div class="container">
 
@@ -57,9 +60,12 @@ $estsb_logo = get_template_directory_uri() . '/assets/images/logo_estsb.jpg';
     </div>
 </footer><!-- .site-footer -->
 
-</div><!-- end #container -->
+<a href="#page" class="back-to-top" id="back-to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+<?php endif; ?>
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>

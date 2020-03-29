@@ -314,7 +314,7 @@ $i++;
 
 
 
- <section class="page-header jumbotron">
+ <section id="school" class="page-header jumbotron">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -343,7 +343,7 @@ $i++;
     /* width: 80px; */
     font-size: 48px;
     /* font-family: 'Quicksand', sans-serif; */
-"></i> </span><br><span class="counter" style="
+"></i> </span><br><span id="etudiants" class="counter" style="
     font-size: 26px;
 ">420</span><br><span class="counter-text" style="
     font-size: 26px;
@@ -369,7 +369,7 @@ $i++;
     /* width: 80px; */
     font-size: 48px;
     /* font-family: 'Quicksand', sans-serif; */
-"></i> </span><br><span class="counter" style="
+"></i> </span><br><span id="laureats" class="counter" style="
     font-size: 26px;
 ">120</span><br><span class="counter-text" style="
     font-size: 26px;
@@ -394,7 +394,7 @@ $i++;
     /* width: 80px; */
     font-size: 48px;
     /* font-family: 'Quicksand', sans-serif; */
-"></i> </span><br><span class="counter" style="
+"></i> </span><br><span id="departements" class="counter" style="
     font-size: 26px;
 ">3</span><br><span class="counter-text" style="
     font-size: 26px;
@@ -417,7 +417,7 @@ $i++;
     /* width: 80px; */
     font-size: 48px;
     /* font-family: 'Quicksand', sans-serif; */
-"></i> </span><br><span class="counter" style="
+"></i> </span><br><span id="enseignants" class="counter" style="
     font-size: 26px;
 ">36</span><br><span class="counter-text" style="
     font-size: 26px;
@@ -432,7 +432,70 @@ $i++;
 
 
 
+<script>
+$(document).ready(function() {
+    function isScrolledIntoView(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
 
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+       return (elemTop <= docViewBottom);
+    }
+var enseignants=1;
+var etudiants=1;
+var laureats=1;
+var departements=1;
+    var myelement = $('#school'); // the element to act on if viewable
+    $(window).scroll(function() {
+        if(isScrolledIntoView(myelement)) {
+			
+			
+			
+			
+	if(enseignants===1)	{
+var val1 = window.setInterval(counter1, 10);
+function counter1() {
+	enseignants++;
+	document.getElementById("enseignants").textContent = enseignants;;
+if(enseignants===36){window.clearInterval(val1);}
+}}	
+			
+			
+				if(etudiants===1)	{
+var val2 = window.setInterval(counter2, 10);
+function counter2() {
+	etudiants++;
+	document.getElementById("etudiants").textContent = etudiants;;
+if(etudiants===420){window.clearInterval(val2);}
+}}
+
+
+
+
+	if(laureats===1)	{
+var val3 = window.setInterval(counter3, 10);
+function counter3() {
+	laureats++;
+	document.getElementById("laureats").textContent = laureats;;
+if(laureats===120){window.clearInterval(val3);}
+}}	
+
+
+
+	if(departements===1)	{
+var val4 = window.setInterval(counter4, 10);
+function counter4() {
+	departements++;
+	document.getElementById("departements").textContent = departements;
+if(departements===3){window.clearInterval(val4);}
+}}	
+	
+        } 
+    });
+});
+</script>
 
 
 

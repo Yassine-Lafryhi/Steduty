@@ -17,6 +17,9 @@ $header_status = steduty_get_option( 'show_top_header' );
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
+	
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -88,7 +91,7 @@ $header_status = steduty_get_option( 'show_top_header' );
 <li id="menu-item-106" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-106">
 <a title="" href="#">Bureau Des Étudiants</a></li>
 <li id="menu-item-115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115">
-<a title="" href="#">Clubs De La ESTSB</a></li>
+<a title="" href="#">Clubs De L'<?php bloginfo('name'); ?></a></li>
 </ul></div>                        </nav>
                     </div><!-- .navigation-section -->
                         </div>
