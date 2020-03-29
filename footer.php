@@ -13,13 +13,48 @@ $estsb_logo = get_template_directory_uri() . '/assets/images/logo_estsb.jpg';
 
 <footer class="site-footer" role="contentinfo" >
 
-    <?php get_sidebar( 'footer' ); ?>
+    <div class="container">
 
+        <div class="row">
+            <div class="col-sm-3"  id="text_footer">
+                <h2>EST SIDI BENNOUR</h2>
+                <p>Adresse : Avenue des Facultés, El Jadida 24000.<br>
+                    Téléphone : 0600000000<br>
+                    Fax : 0500000000</p>
+
+            </div>
+            <div class="col-sm-3"  id="text_footer">
+                <h2>NAVIGATION</h2>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Mot du directeur</a></li>
+                    <li><a href="#">Présentation</a></li>
+                    <li><a href="#">Actualités</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3"  id="text_footer" >
+                <h2>FILIÈRES DUT</h2>
+                <ul>
+                    <li><a href="#">Génie Informatique</a></li>
+                    <li><a href="#">Techniques de Management</a></li>
+                    <li><a href="#">Génie Agro-Environnement</a></li>
+
+                </ul>
+
+            </div>
+            <div class="col-sm-3" id="text_footer">
+                <h2>MAP</h2>
+                <p>
+                   <a href="https://goo.gl/maps/S4diMa1aXDnbjvZo7" > <img  class="border border-success" src="<?php bloginfo('template_url'); ?>/assets/images/adress_est.png"></a>
+                </p>
+            </div>
+        </div>
+
+    </div>
     <div class="wrapper wrapper-copy">
-        <p class="copy"><?php _e('Copyright &copy;','edupress');?> <?php echo date_i18n(__("Y","edupress")); ?> <?php bloginfo('name'); ?>. <?php _e('All Rights Reserved', 'edupress');?>. </p>
-        <p class="copy-ilovewp"><span class="theme-credit"><?php _e( 'Theme by', 'edupress' ); ?><a href="http://www.estsb.ucd.ac.ma/" rel="nofollow external designer noopener" class="footer-logo-ilovewp"><img src="<?php echo esc_url($estsb_logo); ?>" width="150" height="11" alt="<?php esc_attr_e('Education WordPress Theme', 'edupress');?>" /></a></span></p>
-    </div><!-- .wrapper .wrapper-copy -->
-
+        <p class="copy">Copyright © <?php echo date("Y"); ?> EST Sidi Bennour. All Rights Reserved. </p>
+        <p class="copy-ilovewp"><span class="theme-credit">Powered by <a href="https://github.com/Yassine-Lafryhi/Steduty"  class="footer-logo-ilovewp"  style="text-decoration:  none; font-size: 16px;">Steduty</a></span></p>
+    </div>
 </footer><!-- .site-footer -->
 
 </div><!-- end #container -->
