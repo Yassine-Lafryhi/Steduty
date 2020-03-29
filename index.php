@@ -248,7 +248,15 @@ $i++;
 
 				<aside id="secondary" class="widget-area" role="complementary" aria-label="Blog Sidebar">
 		<section id="recent-posts-3" class="widget widget_recent_entries">
-<h2>test</h2>
+            <img src="<?php bloginfo('template_url'); ?>/assets/images/directeur.jpg" class="rounded-circle" alt="Cinque Terre" width="140px" height="236">
+            <div style="text-align: center"><h2 >Najib Saber</h2></div>
+
+            <h3 style="text-align:justify;">
+
+                Notre objectif à <b>l’EST- Sidi Bennour</b> est d’offrir aux étudiants une formation supérieure de qualité, une ouverture sur la vie citoyenne ainsi que les moyens d’acquérir des savoir, des savoir-faire, des savoir-être et des compétences pour une insertion sociale et professionnelle.
+
+
+            </h3>
 					</section>
 				</aside>
            </div>
@@ -270,9 +278,14 @@ $i++;
         </aside>
 				<br>
 				<aside id="secondary" class="widget-area" role="complementary" aria-label="Blog Sidebar">
-		<section id="recent-posts-3" class="widget widget_recent_entries">
-<h2>test</h2>
-					</section>
+		<section id="recent-posts-3" class="widget widget_recent_entries" style="text-align:justify;">
+<h3>" Dans l'ère de la technologie numérique et de la digitalisation de la formation. EST SIDI BENNOUR  lance son nouveau site web. Ce portail est conçu pour vous rapprocher de votre institution, ses composantes, l'organisation des études, les formations dispensées, et les diplômes délivrés. Le site présente de nombreuses nouveautés et offre aux visiteurs notamment les étudiants une expérience améliorée grâce à une navigation simplifiée et une utilisation intuitive. "</h3>
+		<div align="right">
+            Pr <b>Y.Baddi</b> Chef de département Génie Informatique.
+
+        </div>
+
+        </section>
 				</aside>
            </div>
 
