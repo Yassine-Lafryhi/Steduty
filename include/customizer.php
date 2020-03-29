@@ -390,18 +390,23 @@ function steduty_customize_register( $wp_customize ) {
 	    );
     
   	$wp_customize->add_control(
-		new WP_Customize_Control(
-			$wp_customize,
-			'post_cat',
-			array(
-				'label'      => esc_html__('Hide Category','steduty' ),
-				'section'    => 'steduty_new_section_post',
-				'settings'   => 'post_categories',
-				'type'		 => 'checkbox',
-				'priority'	 => 3
-			)
-		)
-	);
+  		new WP_Customize_Control(
+  			$wp_customize,
+  			'post_cat',
+  			array(
+  				'label'      => esc_html__('Hide Category','steduty' ),
+  				'section'    => 'steduty_new_section_post',
+  				'settings'   => 'post_categories',
+  				'type'		 => 'checkbox',
+  				'priority'	 => 3
+  			)
+  		)
+  	);
+
+
+
+
+
 
 	$wp_customize->add_control(
 		new WP_Customize_Control(
@@ -508,22 +513,193 @@ function steduty_customize_register( $wp_customize ) {
 
      
     // Setting Read More Text.
-	$wp_customize->add_setting( 'readmore_text',
-		array(
-			'default'           => $default['readmore_text'],
-			'capability'        => 'edit_theme_options',
-			'sanitize_callback' => 'sanitize_text_field',
-		)
-	);
-	
-	$wp_customize->add_control( 'readmore_text',
-		array(
-			'label'    => esc_html__( 'Read More Button Text', 'steduty' ),
-			'section'  => 'steduty_new_section_post',
-			'type'     => 'text',
-			'priority' => 100,
-		)
-	);
+   	$wp_customize->add_setting( 'readmore_text',
+   		array(
+   			'default'           => $default['readmore_text'],
+   			'capability'        => 'edit_theme_options',
+   			'sanitize_callback' => 'sanitize_text_field',
+   		)
+   	);
+
+   	$wp_customize->add_control( 'readmore_text',
+       		array(
+       			'label'    => esc_html__( 'Read More Button Text', 'steduty' ),
+       			'section'  => 'steduty_new_section_post',
+       			'type'     => 'text',
+       			'priority' => 100,
+       		)
+       	);
+
+
+
+
+
+
+
+
+// School Informations
+
+	$wp_customize->add_section( 'steduty_new_section_school_informations' , array(
+   		'title'          => esc_html__( 'School Informations','steduty' ),
+   		'description'    => '',
+   		'priority'       => 100,
+		'capability'     => 'edit_theme_options',
+			'panel'      => 'theme_option_panel',
+	) );
+
+
+
+
+
+        //TODO:
+       	$wp_customize->add_setting( 'arabic_description_text',
+              		array(
+              			'default'           => '',
+              			'capability'        => 'edit_theme_options',
+              			'sanitize_callback' => 'sanitize_text_field',
+              		)
+              	);
+
+              	$wp_customize->add_control( 'arabic_description_text',
+                  		array(
+                  			'label'    => esc_html__( 'Arabic Description :', 'steduty' ),
+                  			'section'  => 'steduty_new_section_school_informations',
+                  			'type'     => 'text',
+                  			'priority' => 100,
+                  		)
+                  	);
+
+
+
+
+
+                  		$wp_customize->add_setting( 'students_number_text',
+                                               		array(
+                                               			'default'           => '',
+                                               			'capability'        => 'edit_theme_options',
+                                               			'sanitize_callback' => 'sanitize_text_field',
+                                               		)
+                                               	);
+
+                                               	$wp_customize->add_control( 'students_number_text',
+                                                   		array(
+                                                   			'label'    => esc_html__( 'Students number :', 'steduty' ),
+                                                   			'section'  => 'steduty_new_section_school_informations',
+                                                   			'type'     => 'text',
+                                                   			'priority' => 100,
+                                                   		)
+                                                   	);
+
+
+
+
+
+
+
+                	$wp_customize->add_setting( 'laureates_number_text',
+                                                               		array(
+                                                               			'default'           => '',
+                                                               			'capability'        => 'edit_theme_options',
+                                                               			'sanitize_callback' => 'sanitize_text_field',
+                                                               		)
+                                                               	);
+
+                                        $wp_customize->add_control( 'laureates_number_text',
+                                                                   		array(
+                                                                   			'label'    => esc_html__( 'Laureates number :', 'steduty' ),
+                                                                   			'section'  => 'steduty_new_section_school_informations',
+                                                                   			'type'     => 'text',
+                                                                   			'priority' => 100,
+                                                                   		)
+                                                                   	);
+
+
+
+
+
+
+
+                    $wp_customize->add_setting( 'departments_number_text',
+                                                                                 		array(
+                                                                                 			'default'           => '',
+                                                                                 			'capability'        => 'edit_theme_options',
+                                                                                 			'sanitize_callback' => 'sanitize_text_field',
+                                                                                 		)
+                                                                                 	);
+
+                                      $wp_customize->add_control( 'departments_number_text',
+                                                                                     		array(
+                                                                                     			'label'    => esc_html__( 'Departments number :', 'steduty' ),
+                                                                                     			'section'  => 'steduty_new_section_school_informations',
+                                                                                     			'type'     => 'text',
+                                                                                     			'priority' => 100,
+                                                                                     		)
+                                                                                     	);
+
+
+
+
+
+                     $wp_customize->add_setting( 'students_number_text',
+                                                                                                      		array(
+                                                                                                      			'default'           => '',
+                                                                                                      			'capability'        => 'edit_theme_options',
+                                                                                                      			'sanitize_callback' => 'sanitize_text_field',
+                                                                                                      		)
+                                                                                                      	);
+
+                                                           $wp_customize->add_control( 'students_number_text',
+                                                                                                          		array(
+                                                                                                          			'label'    => esc_html__( 'Students number :', 'steduty' ),
+                                                                                                          			'section'  => 'steduty_new_section_school_informations',
+                                                                                                          			'type'     => 'text',
+                                                                                                          			'priority' => 100,
+                                                                                                          		)
+                                                                                                          	);
+
+
+
+
+
+
+                      $wp_customize->add_setting( 'teachers_number_text',
+                                                                                                       		array(
+                                                                                                       			'default'           => '',
+                                                                                                       			'capability'        => 'edit_theme_options',
+                                                                                                       			'sanitize_callback' => 'sanitize_text_field',
+                                                                                                       		)
+                                                                                                       	);
+
+                        $wp_customize->add_control( 'teachers_number_text',
+                                                                                                           		array(
+                                                                                                           			'label'    => esc_html__( 'Teachers number :', 'steduty' ),
+                                                                                                           			'section'  => 'steduty_new_section_school_informations',
+                                                                                                           			'type'     => 'text',
+                                                                                                           			'priority' => 100,
+                                                                                                           		)
+                                                                                                           	);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		
 }

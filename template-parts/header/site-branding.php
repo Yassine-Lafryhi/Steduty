@@ -22,7 +22,13 @@
 		<p class="site-description" style="
             font-family: 'Tajawal', sans-serif;
             margin-top: 10px;
-        ">المدرسة العليا للتكنولوجيا - سيدي بنور</p>
+        ">
+
+        <?php
+        echo steduty_get_option( 'arabic_description_text' );
+        ?>
+
+        </p>
 	</div>
    <?php } ?>
 </div>

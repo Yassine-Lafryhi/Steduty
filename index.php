@@ -345,7 +345,10 @@ $i++;
     /* font-family: 'Quicksand', sans-serif; */
 "></i> </span><br><span id="etudiants" class="counter" style="
     font-size: 26px;
-">420</span><br><span class="counter-text" style="
+"><?php
+          echo steduty_get_option( 'students_number_text' );
+          ?>
+          </span><br><span class="counter-text" style="
     font-size: 26px;
 ">Étudiants</span>							</div>
 					</section>
@@ -371,7 +374,9 @@ $i++;
     /* font-family: 'Quicksand', sans-serif; */
 "></i> </span><br><span id="laureats" class="counter" style="
     font-size: 26px;
-">120</span><br><span class="counter-text" style="
+"><?php
+          echo steduty_get_option( 'arabic_description_text' );
+          ?></span><br><span class="counter-text" style="
     font-size: 26px;
 ">Lauréats</span>							</div>
 					</section>
@@ -396,7 +401,9 @@ $i++;
     /* font-family: 'Quicksand', sans-serif; */
 "></i> </span><br><span id="departements" class="counter" style="
     font-size: 26px;
-">3</span><br><span class="counter-text" style="
+"><?php
+          echo steduty_get_option( 'departments_number_text' );
+          ?></span><br><span class="counter-text" style="
     font-size: 26px;
 ">Départements</span>							</div>
 					</section>
@@ -419,7 +426,11 @@ $i++;
     /* font-family: 'Quicksand', sans-serif; */
 "></i> </span><br><span id="enseignants" class="counter" style="
     font-size: 26px;
-">36</span><br><span class="counter-text" style="
+"><?php
+          echo steduty_get_option( 'arabic_description_text' );
+          ?>
+
+          </span><br><span class="teachers_number_text" style="
     font-size: 26px;
 ">Enseignants</span>							</div>
 					</section>
