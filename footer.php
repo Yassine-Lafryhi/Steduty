@@ -38,8 +38,7 @@ $estsb_logo = get_template_directory_uri() . '/assets/images/logo_estsb.jpg';
             <div class="col-sm-3" id="text_footer">
                 <h2>MAP</h2>
                 <p>
-                    <a href="https://goo.gl/maps/S4diMa1aXDnbjvZo7" > <img  class="border border-success" src="<?php bloginfo('template_url'); ?>/assets/images/adress_est.png"></a>
-                </p>
+<iframe src="https://www.google.com/maps/place/facult%C3%A9+des+sciences+el+jadida/@33.2254737,-8.4873934,17.46z/data=!4m12!1m6!3m5!1s0x0:0x559600239b0202af!2sEcole+Sup%C3%A9rieure+de+Technologie+d'Agadir+(ESTA)!8m2!3d30.4064134!4d-9.5797446!3m4!1s0xda91e1d173ae243:0x4fa699b9874f3eab!8m2!3d33.2253614!4d-8.4861828?hl=en-US" width="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>                </p>
             </div>
         </div>
 

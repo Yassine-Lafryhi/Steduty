@@ -319,7 +319,7 @@ $i++;
                 <div class="row">
                     <div class="col-lg-12">
 
-                            <h1 class="page-title">ESTSB en chiffres</h1>
+                            <h1 class="page-title"><?php bloginfo( 'name' ); ?> en chiffres</h1>
 
 
                     </div>
@@ -374,9 +374,9 @@ $i++;
     /* font-family: 'Quicksand', sans-serif; */
 "></i> </span><br><span id="laureats" class="counter" style="
     font-size: 26px;
-"><?php
-          echo steduty_get_option( 'arabic_description_text' );
-          ?></span><br><span class="counter-text" style="
+"><<?php
+             echo steduty_get_option( 'laureats_number_text' );
+             ?></span><br><span class="counter-text" style="
     font-size: 26px;
 ">Lauréats</span>							</div>
 					</section>
@@ -427,10 +427,10 @@ $i++;
 "></i> </span><br><span id="enseignants" class="counter" style="
     font-size: 26px;
 "><?php
-          echo steduty_get_option( 'arabic_description_text' );
+          echo steduty_get_option( 'teachers_number_text' );
           ?>
 
-          </span><br><span class="teachers_number_text" style="
+          </span><br><span class="counter-text" style="
     font-size: 26px;
 ">Enseignants</span>							</div>
 					</section>
@@ -470,7 +470,12 @@ var val1 = window.setInterval(counter1, 10);
 function counter1() {
 	enseignants++;
 	document.getElementById("enseignants").textContent = enseignants;;
-if(enseignants===36){window.clearInterval(val1);}
+if(enseignants===
+<?php
+                           echo steduty_get_option( 'teachers_number_text' );
+                           ?>
+
+                           ){window.clearInterval(val1);}
 }}	
 			
 			
@@ -479,7 +484,9 @@ var val2 = window.setInterval(counter2, 10);
 function counter2() {
 	etudiants++;
 	document.getElementById("etudiants").textContent = etudiants;;
-if(etudiants===420){window.clearInterval(val2);}
+if(etudiants===<?php
+                         echo steduty_get_option( 'students_number_text' );
+                         ?>){window.clearInterval(val2);}
 }}
 
 
@@ -490,7 +497,7 @@ var val3 = window.setInterval(counter3, 10);
 function counter3() {
 	laureats++;
 	document.getElementById("laureats").textContent = laureats;;
-if(laureats===120){window.clearInterval(val3);}
+if(laureats=== <?php echo steduty_get_option( 'laureates_number_text' );?> ){window.clearInterval(val3);}
 }}	
 
 
@@ -500,7 +507,7 @@ var val4 = window.setInterval(counter4, 10);
 function counter4() {
 	departements++;
 	document.getElementById("departements").textContent = departements;
-if(departements===3){window.clearInterval(val4);}
+if(departements=== <?php echo steduty_get_option( 'departments_number_text' );?> ){window.clearInterval(val4);}
 }}	
 	
         } 

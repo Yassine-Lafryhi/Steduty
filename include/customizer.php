@@ -551,6 +551,7 @@ function steduty_customize_register( $wp_customize ) {
 
 
 
+
         //TODO:
        	$wp_customize->add_setting( 'arabic_description_text',
               		array(
@@ -585,7 +586,7 @@ function steduty_customize_register( $wp_customize ) {
                                                    		array(
                                                    			'label'    => esc_html__( 'Students number :', 'steduty' ),
                                                    			'section'  => 'steduty_new_section_school_informations',
-                                                   			'type'     => 'text',
+                                                   			'type'     => 'number',
                                                    			'priority' => 100,
                                                    		)
                                                    	);
@@ -608,7 +609,7 @@ function steduty_customize_register( $wp_customize ) {
                                                                    		array(
                                                                    			'label'    => esc_html__( 'Laureates number :', 'steduty' ),
                                                                    			'section'  => 'steduty_new_section_school_informations',
-                                                                   			'type'     => 'text',
+                                                                   			'type'     => 'number',
                                                                    			'priority' => 100,
                                                                    		)
                                                                    	);
@@ -631,7 +632,7 @@ function steduty_customize_register( $wp_customize ) {
                                                                                      		array(
                                                                                      			'label'    => esc_html__( 'Departments number :', 'steduty' ),
                                                                                      			'section'  => 'steduty_new_section_school_informations',
-                                                                                     			'type'     => 'text',
+                                                                                     			'type'     => 'number',
                                                                                      			'priority' => 100,
                                                                                      		)
                                                                                      	);
@@ -652,7 +653,7 @@ function steduty_customize_register( $wp_customize ) {
                                                                                                           		array(
                                                                                                           			'label'    => esc_html__( 'Students number :', 'steduty' ),
                                                                                                           			'section'  => 'steduty_new_section_school_informations',
-                                                                                                          			'type'     => 'text',
+                                                                                                          			'type'     => 'number',
                                                                                                           			'priority' => 100,
                                                                                                           		)
                                                                                                           	);
@@ -674,7 +675,104 @@ function steduty_customize_register( $wp_customize ) {
                                                                                                            		array(
                                                                                                            			'label'    => esc_html__( 'Teachers number :', 'steduty' ),
                                                                                                            			'section'  => 'steduty_new_section_school_informations',
-                                                                                                           			'type'     => 'text',
+                                                                                                           			'type'     => 'number',
+                                                                                                           			'priority' => 100,
+                                                                                                           		)
+                                                                                                           	);
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      $wp_customize->add_setting( 'address_text',
+                                                                                                       		array(
+                                                                                                       			'default'           => '',
+                                                                                                       			'capability'        => 'edit_theme_options',
+                                                                                                       			'sanitize_callback' => 'sanitize_text_field',
+                                                                                                       		)
+                                                                                                       	);
+
+                        $wp_customize->add_control( 'address_text',
+                                                                                                           		array(
+                                                                                                           			'label'    => esc_html__( 'School address :', 'steduty' ),
+                                                                                                           			'section'  => 'steduty_new_section_school_informations',
+                                                                                                           			'type'     => 'number',
+                                                                                                           			'priority' => 100,
+                                                                                                           		)
+                                                                                                           	);
+
+
+
+
+
+
+
+                      $wp_customize->add_setting( 'phone_text',
+                                                                                                       		array(
+                                                                                                       			'default'           => '',
+                                                                                                       			'capability'        => 'edit_theme_options',
+                                                                                                       			'sanitize_callback' => 'sanitize_text_field',
+                                                                                                       		)
+                                                                                                       	);
+
+                        $wp_customize->add_control( 'phone_text',
+                                                                                                           		array(
+                                                                                                           			'label'    => esc_html__( 'School phone number :', 'steduty' ),
+                                                                                                           			'section'  => 'steduty_new_section_school_informations',
+                                                                                                           			'type'     => 'number',
+                                                                                                           			'priority' => 100,
+                                                                                                           		)
+                                                                                                           	);
+
+
+
+
+
+
+                      $wp_customize->add_setting( 'fax_text',
+                                                                                                       		array(
+                                                                                                       			'default'           => '',
+                                                                                                       			'capability'        => 'edit_theme_options',
+                                                                                                       			'sanitize_callback' => 'sanitize_text_field',
+                                                                                                       		)
+                                                                                                       	);
+
+                        $wp_customize->add_control( 'fax_text',
+                                                                                                           		array(
+                                                                                                           			'label'    => esc_html__( 'School fax :', 'steduty' ),
+                                                                                                           			'section'  => 'steduty_new_section_school_informations',
+                                                                                                           			'type'     => 'number',
+                                                                                                           			'priority' => 100,
+                                                                                                           		)
+                                                                                                           	);
+
+
+
+
+
+
+
+                      $wp_customize->add_setting( 'map_text',
+                                                                                                       		array(
+                                                                                                       			'default'           => '',
+                                                                                                       			'capability'        => 'edit_theme_options',
+                                                                                                       			'sanitize_callback' => 'sanitize_text_field',
+                                                                                                       		)
+                                                                                                       	);
+
+                        $wp_customize->add_control( 'map_text',
+                                                                                                           		array(
+                                                                                                           			'label'    => esc_html__( 'MAP link :', 'steduty' ),
+                                                                                                           			'section'  => 'steduty_new_section_school_informations',
+                                                                                                           			'type'     => 'url',
                                                                                                            			'priority' => 100,
                                                                                                            		)
                                                                                                            	);
