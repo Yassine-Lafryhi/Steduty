@@ -6302,7 +6302,7 @@ body.zmm-open {
 
 .site-footer {
 
-    background-color: #1b5850;
+    background-color: #192027 ;
     border-top: solid 10px #4a4a4a;
     color: #fff;
     color: rgba(255,255,255,0.6);
@@ -6311,7 +6311,7 @@ body.zmm-open {
     line-height: 1.75em;
     margin: 2em 0 0;
 
-    padding-top: 120px;
+    padding-top: 40px;
     padding-bottom: 40px;
     position: relative;
     text-align: right;
@@ -6418,3 +6418,7 @@ body.zmm-open {
     vertical-align: middle;
 }
 
+#text_footer {
+
+    text-align: center;
+}

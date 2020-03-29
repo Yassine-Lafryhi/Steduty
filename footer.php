@@ -1,37 +1,58 @@
 <?php
-/**
- * The template for displaying the footer
- * @package steduty
- * @version 1.0.0
- */
+
+$estsb_logo = get_template_directory_uri() . '/assets/images/logo_estsb.jpg';
 
 ?>
 
-<!--================================
-        START FOOTER AREA
-    =================================-->
-    <footer class="footer-area">
+<footer class="site-footer" role="contentinfo" >
 
-      <?php get_template_part( 'template-parts/footer/site', 'info' ); ?>
+    <div class="container">
 
-    </footer>
+        <div class="row">
+            <div class="col-sm-3"  id="text_footer">
+                <h2>EST SIDI BENNOUR</h2>
+                <p>Adresse : Avenue des Facultés, El Jadida 24000.<br>
+                    Téléphone : 0600000000<br>
+                    Fax : 0500000000</p>
 
-<!--================================
-    END FOOTER AREA
-    =================================-->
+            </div>
+            <div class="col-sm-3"  id="text_footer">
+                <h2>NAVIGATION</h2>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Mot du directeur</a></li>
+                    <li><a href="#">Présentation</a></li>
+                    <li><a href="#">Actualités</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3"  id="text_footer" >
+                <h2>FILIÈRES DUT</h2>
+                <ul>
+                    <li><a href="#">Génie Informatique</a></li>
+                    <li><a href="#">Techniques de Management</a></li>
+                    <li><a href="#">Génie Agro-Environnement</a></li>
 
-</div><!-- #page -->
-<a href="#page" class="back-to-top" id="back-to-top" style="display: block;"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-<?php $back_to_top_type = steduty_get_option( 'back_to_top_type' );
+                </ul>
 
-if($back_to_top_type == 'enable'): ?>
+            </div>
+            <div class="col-sm-3" id="text_footer">
+                <h2>MAP</h2>
+                <p>
+                    <a href="https://goo.gl/maps/S4diMa1aXDnbjvZo7" > <img  class="border border-success" src="<?php bloginfo('template_url'); ?>/assets/images/adress_est.png"></a>
+                </p>
+            </div>
+        </div>
 
-<a href="#page" class="back-to-top" id="back-to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+    </div>
+    <div class="wrapper wrapper-copy">
+        <p class="copy">Copyright © <?php echo date("Y"); ?> EST Sidi Bennour. All Rights Reserved. </p>
+        <p class="copy-ilovewp"><span class="theme-credit">Powered by <a href="https://github.com/Yassine-Lafryhi/Steduty"  class="footer-logo-ilovewp"  style="text-decoration:  none; font-size: 16px;">Steduty</a></span></p>
+    </div>
+</footer><!-- .site-footer -->
 
-<?php endif; ?>
+</div><!-- end #container -->
 
 <?php wp_footer(); ?>
 
 </body>
-
 </html>
