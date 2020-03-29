@@ -1,4 +1,4 @@
-# Steduty
+﻿# Steduty
 > A clean, responsive and simple WordPress theme for schools
 
 ![](https://img.shields.io/badge/Build-passing-brightgreen)
@@ -35,11 +35,6 @@ http://estsb-gi.atwebpages.com/
 
 ![](screenshots/ScreenShot1.png)
 
-![](screenshots/ScreenShot2.png)
-
-![](screenshots/ScreenShot3.png)
-
-![](screenshots/ScreenShot4.png)
 
 ## Theme Features
 
