@@ -413,6 +413,24 @@ h6 {
     padding: 1.5em 0 0;
 }
 
+
+.search-field::-webkit-input-placeholder {
+    font-family: 'Quicksand','Tajawal', sans-serif;
+}
+
+.search-field:-ms-input-placeholder {
+    font-family: 'Quicksand','Tajawal', sans-serif;
+}
+
+.search-field:-moz-placeholder {
+    font-family: 'Quicksand','Tajawal', sans-serif;
+}
+
+.search-field::-moz-placeholder {
+    font-family: 'Quicksand','Tajawal', sans-serif;
+}
+
+
 h1:first-child,
 h2:first-child,
 h3:first-child,
@@ -420,6 +438,7 @@ h4:first-child,
 h5:first-child,
 h6:first-child {
     padding-top: 0;
+    font-family: 'Quicksand','Tajawal', sans-serif;
 }
 
 body h1 {
@@ -918,6 +937,8 @@ textarea {
     display: block;
     padding: 0.7em;
     width: 100%;
+
+    font-family: 'Quicksand','Tajawal', sans-serif;
 }
 
 input[type="text"]:focus,
@@ -1576,6 +1597,11 @@ body:not(.title-tagline-hidden) .site-branding-text {
     font-size: 26px !important;
     line-height: 1.214;
     font-weight: 700 !important;
+
+
+
+    font-family: 'Quicksand','Tajawal', sans-serif;
+    text-align: center;
 }
 
 
@@ -2083,7 +2109,8 @@ body:not(.steduty-front-page) #comments {
 
 .post-navigation .nav-previous .nav-title {
     margin-left: 5px;
-    font-size: 15px;
+    font-size: 12px;
+    font-family: 'Quicksand','Tajawal', sans-serif;
 }
 
 .post-navigation .nav-links .nav-next i {
@@ -2096,9 +2123,9 @@ body:not(.steduty-front-page) #comments {
     display: inline-block;
     color: #000;
     float: right;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 300;
-
+    font-family: 'Quicksand','Tajawal', sans-serif;
     transition: all, ease, .3s;
 }
 
@@ -2401,6 +2428,7 @@ a.comment-reply-link:hover {
 
 .comments-area .comment-content p {
     margin-bottom: 0;
+    font-family: 'Quicksand','Tajawal', sans-serif;
 }
 
 .comment-reply-link .icon {
@@ -2472,7 +2500,7 @@ a:focus {
     margin: 0;
 /*TODO :*/
     text-align: center;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Quicksand','Tajawal', sans-serif;
 }
 
 .widget ul li,
@@ -3716,12 +3744,8 @@ ul.side-newsfeed li + li {
 
 .entry-content p, .entry-content blockquote {
     color: #3b3d3f;
-    text-align: justify;
-
-/*TODO: */
-    font-family: 'Tajawal', sans-serif;
-    direction: rtl;
-
+    text-align: center;
+    font-family: 'Quicksand','Tajawal', sans-serif;
 }
 
 .about-me img {
@@ -4720,6 +4744,7 @@ ul.side-newsfeed li + li {
     border: none;
     background: transparent;
     text-indent: 0;
+    font-family: 'Quicksand','Tajawal', sans-serif;
 }
 
 .page-header .page-title {
@@ -5117,7 +5142,7 @@ article.post {
     text-align: center;
 /*TODO */
 
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Quicksand','Tajawal', sans-serif;
 }
 
 .steduty-post-grid .entry-header .entry-meta {
@@ -5500,6 +5525,8 @@ body .not-found .search-form label,
     line-height: 1.9;
     margin-bottom: 0;
     text-indent: 45px;
+    font-family: 'Quicksand','Tajawal', sans-serif;
+    text-align: justify;
 }
 
 .type-page .entry-content h2 {
