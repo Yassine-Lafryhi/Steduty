@@ -6049,7 +6049,9 @@ body.zmm-open {
 
 @media screen and (max-width: 1024px) {
 
-
+    #logo_ucd{
+        visibility: hidden;
+    }
     .mobile-menu-wrap .mobile-menu {
         height: 100%;
         position: fixed;
@@ -6271,14 +6273,16 @@ body.zmm-open {
 ******************************************/
 
 .site-footer {
-    background-color: #042351;
-    border-top: solid 10px #c70000;
+
+    background-color: #1b5850;
+    border-top: solid 10px #4a4a4a;
     color: #fff;
     color: rgba(255,255,255,0.6);
     font-size: 14px;
     font-weight: 400;
     line-height: 1.75em;
-    margin: -60px 0 0;
+    margin: 2em 0 0;
+
     padding-top: 120px;
     padding-bottom: 40px;
     position: relative;
@@ -6385,3 +6389,4 @@ body.zmm-open {
     margin: 0 0 0 4px;
     vertical-align: middle;
 }
+

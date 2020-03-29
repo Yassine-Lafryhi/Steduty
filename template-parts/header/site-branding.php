@@ -7,7 +7,7 @@
  */
 ?>
 
-<img src="https://cdn-06.9rayti.com/rsrc/cache/widen_292/uploads/2018/06/Logo-EST-Sidi-Bennour.jpg" width="140px" height="140px">
+<img src="<?php bloginfo('template_url'); ?>/assets/images/logo_estsb.jpg" width="200px" height="140px">
 
 <div class="site-branding">
 
@@ -28,6 +28,6 @@
 </div>
 
 
-<img src="https://1.bp.blogspot.com/-_yUMQTdtx4U/XV77i4HIYqI/AAAAAAABCJQ/NlA2XIuEV2QddJDjM9Kgna_SKlEuMzl-ACLcBGAs/s1600/%25D8%25AC%25D8%25A7%25D9%2585%25D8%25B9%25D8%25A9-%25D8%25B4%25D8%25B9%25D9%258A%25D8%25A8-%25D8%25A7%25D9%2584%25D8%25AF%25D9%2583%25D8%25A7%25D9%2584%25D9%258A.jpg" width="140px" height="140px">
+<img id="logo_ucd" src="<?php bloginfo('template_url'); ?>/assets/images/logo_ucd.jpg" width="200px" height="140px">
 
 <!-- .site-branding -->

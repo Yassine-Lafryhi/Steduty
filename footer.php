@@ -11,7 +11,7 @@ $estsb_logo = get_template_directory_uri() . '/assets/images/logo_estsb.jpg';
 
 ?>
 
-<footer class="site-footer" role="contentinfo">
+<footer class="site-footer" role="contentinfo" >
 
     <?php get_sidebar( 'footer' ); ?>
 
