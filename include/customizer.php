@@ -704,7 +704,7 @@ function steduty_customize_register( $wp_customize ) {
                                                                                                            		array(
                                                                                                            			'label'    => esc_html__( 'School address :', 'steduty' ),
                                                                                                            			'section'  => 'steduty_new_section_school_informations',
-                                                                                                           			'type'     => 'number',
+                                                                                                           			'type'     => 'text',
                                                                                                            			'priority' => 100,
                                                                                                            		)
                                                                                                            	);
