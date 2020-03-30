@@ -96,4 +96,8 @@ Finally, we want say thank you to the one and only, our teacher Mr BADDI YOUSSEF
 - Project Link : [https://github.com/Yassine-Lafryhi/Steduty](https://github.com/Yassine-Lafryhi/Steduty)
 
 ## Tags
++ wordpress
++ wordpress-theme
++ bootstrap
++ school
 
