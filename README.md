@@ -61,7 +61,7 @@ Once you have **Steduty.zip** downloaded you can go to your **WordPress dashboar
 + To change the menus go to :
   * "Appearance -> Customize -> Menus" then create new menu.  
 + To change the school informations go to :
-  * "Appearance -> Customize -> Theme Options -> School Infomations" then edit the following settings :  
+  * "Appearance -> Customize -> Theme Options -> School Informations" then edit the following settings :  
 ![](screenshots/Settings1.png)
 
 
@@ -83,15 +83,15 @@ Contributions are what make the open source community such an amazing place to b
   - 30.03.2020
     * Initial Release
 
-## Thanks 
-Finally, we want say thank you to the one and only, our teacher Mr BADDI YOUSSEF Assistant Doctor in UCD (CHOUAIB DOUKKALI University, ElJadida, Moroco) for his supervising and supporting, also for giving us this opportunity to improve our skills and know new technologies.
+## Thanks
+Finally, we want say thank you to the one and only, our teacher Mr BADDI YOUSSEF Assistant Doctor in UCD (CHOUAIB DOUKKALI University, ElJadida, Morocco) for his supervising and supporting, also for giving us this opportunity to improve our skills and know new technologies.
 
 
 ## License
 [MIT License](https://choosealicense.com/licenses/mit/)
 
 ## Contact
-- Zakaria Mahmoud - [@ZakariaMahmoud](https://twitter.com/zakariamahmou16) - [zakaria.forwork@gmail.com](mailto:zakaria.forwork@gmail.com)
+- Zakaria Mahmoud - [@zakariamahmoud16](https://twitter.com/zakariamahmou16) - [zakaria.forwork@gmail.com](mailto:zakaria.forwork@gmail.com)
 - Yassine Lafryhi - [@YassineLafryhi](https://twitter.com/YassineLafryhi) - [y.lafryhi@gmail.com](mailto:y.lafryhi@gmail.com)
 - Project Link : [https://github.com/Yassine-Lafryhi/Steduty](https://github.com/Yassine-Lafryhi/Steduty)
 
@@ -100,4 +100,3 @@ Finally, we want say thank you to the one and only, our teacher Mr BADDI YOUSSEF
 + wordpress-theme
 + bootstrap
 + school
-
