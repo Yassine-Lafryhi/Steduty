@@ -780,7 +780,193 @@ function steduty_customize_register( $wp_customize ) {
 
 
 
+// Social Media links 
 
+// --> Facebook
+
+
+$wp_customize->add_section( 'steduty_new_section_socialmedia_links' , array(
+	'title'          => esc_html__( 'Social Media Links','steduty' ),
+	'description'    => '',
+	'priority'       => 100,
+    'capability'     => 'edit_theme_options',
+	 'panel'      => 'theme_option_panel',
+) );
+
+
+
+
+$wp_customize->add_setting( 'facebook_link',
+array(
+	'default'           => 'https://www.facebook.com/',
+	'capability'        => 'edit_theme_options',
+	'sanitize_callback' => 'sanitize_text_field',
+)
+);
+
+$wp_customize->add_control( 'facebook_link',
+	array(
+		'label'    => esc_html__( 'Facebook link :', 'steduty' ),
+		'section'  => 'steduty_new_section_socialmedia_links',
+		'type'     => 'text',
+		'priority' => 100,
+	)
+);
+
+
+
+$wp_customize->add_setting( 'facebook_icon',
+array(
+	'default'           => 'show',
+	'capability'        => 'edit_theme_options',
+	'sanitize_callback' => 'sanitize_text_field',
+)
+);
+
+$wp_customize->add_control( 'facebook_icon',
+array(
+	'label'    => esc_html__( 'Facebook Icon:', 'steduty' ),
+	'section'  => 'steduty_new_section_socialmedia_links',
+	'type'     => 'radio',
+		'choices'  => array(
+			'show'  => 'Show',
+			'hide' => 'Hide',
+		),
+	'priority' => 100,
+)
+);
+
+
+// --> Instagrame
+
+
+$wp_customize->add_setting( 'instagram_link',
+array(
+	'default'           => 'https://www.instagram.com/',
+	'capability'        => 'edit_theme_options',
+	'sanitize_callback' => 'sanitize_text_field',
+	)
+);
+
+$wp_customize->add_control( 'instagram_link',
+	array(
+		'label'    => esc_html__( 'Instagram link :', 'steduty' ),
+		'section'  => 'steduty_new_section_socialmedia_links',
+		'type'     => 'text',
+		'priority' => 100,
+	)
+);
+
+
+
+$wp_customize->add_setting( 'instagram_icon',
+array(
+	'default'           => 'show',
+	'capability'        => 'edit_theme_options',
+	'sanitize_callback' => 'sanitize_text_field',
+)
+);
+
+$wp_customize->add_control( 'instagram_icon',
+array(
+	'label'    => esc_html__( 'Instagram Icon:', 'steduty' ),
+	'section'  => 'steduty_new_section_socialmedia_links',
+	'type'     => 'radio',
+		'choices'  => array(
+			'show'  => 'Show',
+			'hide' => 'Hide',
+		),
+	'priority' => 100,
+)
+);
+
+
+// --> Twitter
+
+
+$wp_customize->add_setting( 'twitter_link',
+array(
+	'default'           => 'https://www.twitter.com/',
+	'capability'        => 'edit_theme_options',
+	'sanitize_callback' => 'sanitize_text_field',
+)
+);
+
+$wp_customize->add_control( 'twitter_link',
+	array(
+		'label'    => esc_html__( 'Twitter link :', 'steduty' ),
+		'section'  => 'steduty_new_section_socialmedia_links',
+		'type'     => 'text',
+		'priority' => 100,
+	)
+);
+
+
+
+$wp_customize->add_setting( 'twitter_icon',
+array(
+	'default'           => 'show',
+	'capability'        => 'edit_theme_options',
+	'sanitize_callback' => 'sanitize_text_field',
+)
+);
+
+$wp_customize->add_control( 'twitter_icon',
+array(
+	'label'    => esc_html__( 'Twitter Icon:', 'steduty' ),
+	'section'  => 'steduty_new_section_socialmedia_links',
+	'type'     => 'radio',
+		'choices'  => array(
+			'show'  => 'Show',
+			'hide' => 'Hide',
+		),
+	'priority' => 100,
+)
+);
+
+
+// --> Youtube
+
+
+$wp_customize->add_setting( 'youtube_link',
+array(
+	'default'           => 'https://www.youtube.com/',
+	'capability'        => 'edit_theme_options',
+	'sanitize_callback' => 'sanitize_text_field',
+)
+);
+
+$wp_customize->add_control( 'youtube_link',
+	array(
+		'label'    => esc_html__( 'Youtube link :', 'steduty' ),
+		'section'  => 'steduty_new_section_socialmedia_links',
+		'type'     => 'text',
+		'priority' => 100,
+	)
+);
+
+
+
+$wp_customize->add_setting( 'youtube_icon',
+array(
+	'default'           => 'show',
+	'capability'        => 'edit_theme_options',
+	'sanitize_callback' => 'sanitize_text_field',
+)
+);
+
+$wp_customize->add_control( 'youtube_icon',
+array(
+	'label'    => esc_html__( 'Youtube Icon:', 'steduty' ),
+	'section'  => 'steduty_new_section_socialmedia_links',
+	'type'     => 'radio',
+		'choices'  => array(
+			'show'  => 'Show',
+			'hide' => 'Hide',
+		),
+	'priority' => 100,
+)
+);
 
 
 
@@ -804,6 +990,15 @@ function steduty_customize_register( $wp_customize ) {
 
 
 add_action( 'customize_register', 'steduty_customize_register' );
+
+
+
+
+
+
+
+
+
 
 
 /**

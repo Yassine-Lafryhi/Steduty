@@ -387,7 +387,7 @@ $i++;
     /* font-family: 'Quicksand', sans-serif; */
 "></i> </span><br><span id="laureats" class="counter" style="
     font-size: 26px;
-"><<?php
+"><?php
              echo steduty_get_option( 'laureats_number_text' );
              ?></span><br><span class="counter-text" style="
     font-size: 26px;

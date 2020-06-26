@@ -16,6 +16,7 @@ $header_status = steduty_get_option( 'show_top_header' );
     <link rel="profile" href="http://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <?php wp_head(); ?>
 	
 	
@@ -27,6 +28,9 @@ $header_status = steduty_get_option( 'show_top_header' );
   if ( function_exists( 'wp_body_open' ) ) {
     wp_body_open();
 }
+
+
+
 ?>
 <div id="page" class="site">
     <a class="skip-link screen-reader-text"
@@ -68,14 +72,6 @@ $header_status = steduty_get_option( 'show_top_header' );
 			</div>
 
 
-
-
-
-
-
-
-
-
 			<div class="header-top">
                     <div class="container">
                         <div class="row">
@@ -97,14 +93,33 @@ $header_status = steduty_get_option( 'show_top_header' );
                         </div>
 <div class="col-md-6 col-sm-12 social-links">
 <div class="menu-social-container"><ul id="social" class="social-info list-inline">
-<li id="menu-item-92" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-92">
-<a title="" href="http://www.facebook.com">Facebook</a></li>
-<li id="menu-item-93" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-93">
-<a title="" href="http://www.twitter.com">Twitter</a></li>
-<li id="menu-item-94" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-94">
-<a title="" href="http://www.linkedin.com">Linkedin</a></li>
-<li id="menu-item-95" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-95">
-<a title="" href="http://www.instagram.com">Instagram</a></li>
+
+
+<?php 
+
+
+if (steduty_get_option( 'facebook_icon') == "show"){
+echo "<a class='fa fa-facebook' href=".steduty_get_option( 'facebook_link' )."></a>" ;
+}
+
+
+
+if (steduty_get_option( 'twitter_icon') == "show"){
+    echo "<a class='fa fa-twitter' href=".steduty_get_option( 'twitter_link' )."></a>" ;
+    }
+
+if (steduty_get_option( 'instagram_icon') == "show"){
+    echo "<a class='fa fa-instagram' href=".steduty_get_option( 'instagram_link' )."></a>" ;
+}
+
+if (steduty_get_option( 'youtube_icon') == "show"){
+    echo "<a class='fa fa-youtube' href=".steduty_get_option( 'youtube_link' )."></a>" ;
+    }
+
+
+
+?>
+
 </ul></div>
 
             		</div>
