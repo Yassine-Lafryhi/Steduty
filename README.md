@@ -88,7 +88,7 @@ Finally, we want say thank you to the one and only, our teacher Mr BADDI YOUSSEF
 
 
 ## License
-[MIT License](https://choosealicense.com/licenses/mit/)
+[Apache-2.0 License](https://choosealicense.com/licenses/apache-2.0/)
 
 ## Contact
 - Zakaria Mahmoud - [@zakariamahmoud16](https://twitter.com/zakariamahmou16) - [zakaria.forwork@gmail.com](mailto:zakaria.forwork@gmail.com)
@@ -96,7 +96,7 @@ Finally, we want say thank you to the one and only, our teacher Mr BADDI YOUSSEF
 - Project Link : [https://github.com/Yassine-Lafryhi/Steduty](https://github.com/Yassine-Lafryhi/Steduty)
 
 ## Tags
-+ wordpress
-+ wordpress-theme
-+ bootstrap
-+ school
+```wordpress```
+```wordpress-theme```
+```bootstrap```
+```school```
