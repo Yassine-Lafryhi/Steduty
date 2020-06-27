@@ -141,7 +141,7 @@ $sidebar_class = steduty_get_option('steduty_sidebar');
 ">
                             <span class="counter-icon"> <i class="fa fa-users" style="
     color: #009688;
-    /* width: 80px; */
+     width: 80px; 
     font-size: 48px;
     /* font-family: 'Quicksand', sans-serif; */
 "></i> </span><br><span id="etudiants" class="counter" style="
@@ -164,7 +164,7 @@ $sidebar_class = steduty_get_option('steduty_sidebar');
 ">
                             <span class="counter-icon"> <i class="fa fa-graduation-cap" style="
     color: #009688;
-    /* width: 80px; */
+     width: 80px; 
     font-size: 48px;
     /* font-family: 'Quicksand', sans-serif; */
 "></i> </span><br><span id="laureats" class="counter" style="
@@ -186,7 +186,7 @@ $sidebar_class = steduty_get_option('steduty_sidebar');
 ">
                             <span class="counter-icon"> <i class="fa fa-university" style="
     color: #009688;
-    /* width: 80px; */
+     width: 80px; 
     font-size: 48px;
     /* font-family: 'Quicksand', sans-serif; */
 "></i> </span><br><span id="departements" class="counter" style="
@@ -208,7 +208,7 @@ $sidebar_class = steduty_get_option('steduty_sidebar');
 ">
                             <span class="counter-icon"> <i class="fa fa-user" style="
     color: #009688;
-    /* width: 80px; */
+     width: 80px; 
     font-size: 48px;
     /* font-family: 'Quicksand', sans-serif; */
 "></i> </span><br><span id="enseignants" class="counter" style="

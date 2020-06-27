@@ -733,26 +733,6 @@ function steduty_customize_register($wp_customize)
     );
 
 
-    $wp_customize->add_setting(
-        'map_text',
-        array(
-            'default' => '',
-            'capability' => 'edit_theme_options',
-            'sanitize_callback' => 'sanitize_text_field',
-        )
-    );
-
-    $wp_customize->add_control(
-        'map_text',
-        array(
-            'label' => esc_html__('MAP link :', 'steduty'),
-            'section' => 'steduty_new_section_school_informations',
-            'type' => 'url',
-            'priority' => 100,
-        )
-    );
-
-
     // Social Media links
 
     // --> Facebook
@@ -995,7 +975,7 @@ function steduty_customize_register($wp_customize)
     $wp_customize->add_control(
         new WP_Customize_Image_Control(
             $wp_customize,
-            'photo',
+            'photo_the_director',
             array(
                 'label' => __('Upload The Director Photo', 'photo_director'),
                 'description' => 'It is recommended that the photo be square',
@@ -1026,7 +1006,7 @@ function steduty_customize_register($wp_customize)
     );
 
 
-// A WORD  THE TESTIMONY
+// THE TESTIMONY
 
 
     $wp_customize->add_section('steduty_the_testimony', array(
