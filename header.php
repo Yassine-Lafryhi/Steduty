@@ -84,16 +84,16 @@ if (function_exists('wp_body_open')) {
                                 <ul id="social" class="social-info list-inline">
                                     <?php
                                     if (steduty_get_option('facebook_icon') == "show") {
-                                        echo "<a class='fa fa-facebook' href=" . steduty_get_option('facebook_link') . "></a>";
+                                        echo "<a class='fa fa-facebook' id='social_networks_icons' href=" . steduty_get_option('facebook_link') . "></a>";
                                     }
                                     if (steduty_get_option('twitter_icon') == "show") {
-                                        echo "<a class='fa fa-twitter' href=" . steduty_get_option('twitter_link') . "></a>";
+                                        echo "<a class='fa fa-twitter' id='social_networks_icons'  href=" . steduty_get_option('twitter_link') . "></a>";
                                     }
                                     if (steduty_get_option('instagram_icon') == "show") {
-                                        echo "<a class='fa fa-instagram' href=" . steduty_get_option('instagram_link') . "></a>";
+                                        echo "<a class='fa fa-instagram' id='social_networks_icons'  href=" . steduty_get_option('instagram_link') . "></a>";
                                     }
                                     if (steduty_get_option('youtube_icon') == "show") {
-                                        echo "<a class='fa fa-youtube' href=" . steduty_get_option('youtube_link') . "></a>";
+                                        echo "<a class='fa fa-youtube' id='social_networks_icons' href=" . steduty_get_option('youtube_link') . "></a>";
                                     }
                                     ?>
                                 </ul>
