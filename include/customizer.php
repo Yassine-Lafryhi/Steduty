@@ -97,42 +97,6 @@ function steduty_customize_register($wp_customize)
 		)
 	);
 
-
-	// Breadcrumb Section.
-	$wp_customize->add_section(
-		'section_breadcrumb',
-		array(
-			'title'      => esc_html__('Breadcrumb Options', 'steduty'),
-			'priority'   => 100,
-			'capability' => 'edit_theme_options',
-			'panel'      => 'theme_option_panel',
-		)
-	);
-
-	// Setting breadcrumb_type.
-	$wp_customize->add_setting(
-		'breadcrumb_type',
-		array(
-			'default'           => $default['breadcrumb_type'],
-			'capability'        => 'edit_theme_options',
-			'sanitize_callback' => 'steduty_sanitize_select',
-		)
-	);
-
-	$wp_customize->add_control(
-		'breadcrumb_type',
-		array(
-			'label'       => esc_html__('Breadcrumb Type', 'steduty'),
-			'section'     => 'section_breadcrumb',
-			'type'        => 'radio',
-			'priority'    => 100,
-			'choices'     => array(
-				'disable' => esc_html__('Disable', 'steduty'),
-				'normal'  => esc_html__('Normal', 'steduty'),
-			),
-		)
-	);
-
 	// Layout Section.
 	$wp_customize->add_section('steduty_new_section_general', array(
 		'title'      => esc_html__('Layout Settings', 'steduty'),
@@ -820,7 +784,7 @@ function steduty_customize_register($wp_customize)
 
 
 
-	// Social Media links 
+	// Social Media links
 
 	// --> Facebook
 
@@ -1365,9 +1329,6 @@ if (!function_exists('steduty_default_theme_options')) :
 
 		// Footer.
 		$defaults['copyright_text']             = esc_html__('Copyright &copy; All rights reserved.', 'steduty');
-
-		// Breadcrumb.
-		$defaults['breadcrumb_type']            = 'normal';
 
 		//slider active
 		$defaults['steduty_feature_post_status'] = false;
