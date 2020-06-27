@@ -57,6 +57,54 @@ function steduty_customize_register($wp_customize)
 	);
 
 
+	// Left And Right Logo
+
+
+	$wp_customize->add_setting(
+		'header_left_logo',
+		array(
+			'default'           => $default['header_left_logo'] ,
+			'capability'        => 'edit_theme_options',
+			'sanitize_callback' => 'sanitize_text_field',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'header_left_logo',
+			array(
+				'label'      => __( 'Left Logo', 'header_left_logo' ),
+				'section'    => 'section_header',
+				'settings'   => 'header_left_logo',
+			)
+		)
+	);
+	
+	$wp_customize->add_setting(
+		'header_right_logo',
+		array(
+			'default'           => $default['header_right_logo'],
+			'capability'        => 'edit_theme_options',
+			'sanitize_callback' => 'sanitize_text_field',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'header_right_logo',
+			array(
+				'label'      => __( 'Right Logo', 'header_right_logo' ),
+				'section'    => 'section_header',
+				'settings'   => 'header_right_logo',
+			)
+		)
+	);
+	
+
+
+
+
+
 	/*Settings sidebar on front page*/
 	$wp_customize->add_setting('steduty_sidebar', array(
 		'capability'        => 'edit_theme_options',
@@ -839,7 +887,7 @@ function steduty_customize_register($wp_customize)
 	$wp_customize->add_setting(
 		'facebook_link',
 		array(
-			'default'           => 'https://www.facebook.com/',
+			'default'           => $default['facebook_link'],
 			'capability'        => 'edit_theme_options',
 			'sanitize_callback' => 'sanitize_text_field',
 		)
@@ -887,7 +935,7 @@ function steduty_customize_register($wp_customize)
 	$wp_customize->add_setting(
 		'instagram_link',
 		array(
-			'default'           => 'https://www.instagram.com/',
+			'default'           => $default['instagram_link'],
 			'capability'        => 'edit_theme_options',
 			'sanitize_callback' => 'sanitize_text_field',
 		)
@@ -935,7 +983,7 @@ function steduty_customize_register($wp_customize)
 	$wp_customize->add_setting(
 		'twitter_link',
 		array(
-			'default'           => 'https://www.twitter.com/',
+			'default'           => $default['twitter_link'],
 			'capability'        => 'edit_theme_options',
 			'sanitize_callback' => 'sanitize_text_field',
 		)
@@ -983,7 +1031,7 @@ function steduty_customize_register($wp_customize)
 	$wp_customize->add_setting(
 		'youtube_link',
 		array(
-			'default'           => 'https://www.youtube.com/',
+			'default'           => $default['youtube_link'],
 			'capability'        => 'edit_theme_options',
 			'sanitize_callback' => 'sanitize_text_field',
 		)
@@ -1042,7 +1090,7 @@ function steduty_customize_register($wp_customize)
 	$wp_customize->add_setting(
 		'name_the_director',
 		array(
-			'default'           => 'NAJIB SABER',
+			'default'           => $default['name_the_director'],
 			'capability'        => 'edit_theme_options',
 			'sanitize_callback' => 'sanitize_text_field',
 		)
@@ -1063,7 +1111,7 @@ function steduty_customize_register($wp_customize)
 	$wp_customize->add_setting(
 		'photo_the_director',
 		array(
-			'default'           => get_template_directory_uri().'/assets/images/directeur.jpg',
+			'default'           => $default['photo_the_director'],
 			'capability'        => 'edit_theme_options',
 			'sanitize_callback' => 'sanitize_text_field',
 		)
@@ -1087,7 +1135,7 @@ function steduty_customize_register($wp_customize)
 	$wp_customize->add_setting(
 		'word_the_director',
 		array(
-			'default'           => 'Notre objectif à l’EST- Sidi Bennour est d’offrir aux étudiants une formation supérieure de qualité, une ouverture sur la vie citoyenne ainsi que les moyens d’acquérir des savoir, des savoir-faire, des savoir-être et des compétences pour une insertion sociale et professionnelle.',
+			'default'           => $default['word_the_director'],
 			'capability'        => 'edit_theme_options',
 			'sanitize_callback' => 'sanitize_text_field',
 		)
@@ -1121,7 +1169,7 @@ $wp_customize->add_section('steduty_the_testimony', array(
 $wp_customize->add_setting(
 	'name_the_testimony',
 	array(
-		'default'           => 'TOUMI HICHAM',
+		'default'           => $default['name_the_testimony'],
 		'capability'        => 'edit_theme_options',
 		'sanitize_callback' => 'sanitize_text_field',
 	)
@@ -1142,7 +1190,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
 	'photo_the_testimony',
 	array(
-		'default'           => get_template_directory_uri().'/assets/images/testimony.jpg',
+		'default'           => $default['photo_the_testimony'],
 		'capability'        => 'edit_theme_options',
 		'sanitize_callback' => 'sanitize_text_field',
 	)
@@ -1166,7 +1214,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
 	'the_testimony',
 	array(
-		'default'           => '" Dans l\'ère de la technologie numérique et de la digitalisation de la formation. EST SIDI BENNOUR lance son nouveau site web. Ce portail est conçu pour vous rapprocher de votre institution, ses composantes, l\'organisation des études, les formations dispensées, et les diplômes délivrés. Le site présente de nombreuses nouveautés et offre aux visiteurs notamment les étudiants une expérience améliorée grâce à une navigation simplifiée et une utilisation intuitive. "',
+		'default'           => $default['the_testimony'],
 		'capability'        => 'edit_theme_options',
 		'sanitize_callback' => 'sanitize_text_field',
 	)
@@ -1186,7 +1234,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
 	'job_testimony',
 	array(
-		'default'           => 'Chef de département Génie Informatique',
+		'default'           => $default['job_testimony'],
 		'capability'        => 'edit_theme_options',
 		'sanitize_callback' => 'sanitize_text_field',
 	)
@@ -1385,7 +1433,7 @@ if (!function_exists('steduty_default_theme_options')) :
 
 
 		// The Director Word
-		$defaults['name_the_director'] = 'NAJIB SABIR';
+		$defaults['name_the_director'] = 'NAJIB SABER';
 
 		$defaults['photo_the_director'] = get_template_directory_uri().'/assets/images/directeur.jpg';
 
@@ -1400,6 +1448,12 @@ if (!function_exists('steduty_default_theme_options')) :
 		$defaults['the_testimony'] = '" Dans l\'ère de la technologie numérique et de la digitalisation de la formation. EST SIDI BENNOUR lance son nouveau site web. Ce portail est conçu pour vous rapprocher de votre institution, ses composantes, l\'organisation des études, les formations dispensées, et les diplômes délivrés. Le site présente de nombreuses nouveautés et offre aux visiteurs notamment les étudiants une expérience améliorée grâce à une navigation simplifiée et une utilisation intuitive. "';
 
 		$defaults['job_testimony'] = 'Chef de département Génie Informatique';
+
+		// LOGO HEADER
+
+		$defaults['header_left_logo'] = get_template_directory_uri().'/assets/images/logo_estsb.png';
+
+		$defaults['header_right_logo'] = get_template_directory_uri().'/assets/images/logo_ucd.jpg';
 
 
 

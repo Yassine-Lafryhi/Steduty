@@ -7,7 +7,7 @@
  */
 ?>
 
-<img src="<?php bloginfo('template_url'); ?>/assets/images/logo_estsb.jpg" width="200px" height="140px">
+<img src="<?php echo get_theme_mod('header_left_logo');?>" width="230px" height="140px">
 
 <div class="site-branding">
 
@@ -34,6 +34,6 @@
 </div>
 
 
-<img id="logo_ucd" src="<?php bloginfo('template_url'); ?>/assets/images/logo_ucd.jpg" width="200px" height="140px">
+<img id="logo_ucd" src="<?php echo get_theme_mod('header_right_logo');?>" width="230px" height="140px">
 
 <!-- .site-branding -->
