@@ -1250,8 +1250,111 @@ $wp_customize->add_control(
 	)
 );
 
+// MAP 
+ 
+$wp_customize->add_section('steduty_map', array(
+	'title'          => esc_html__('MAP API', 'steduty'),
+	'description'    => '',
+	'priority'       => 100,
+	'capability'     => 'edit_theme_options',
+	'panel'      => 'theme_option_panel',
+));
+
+$wp_customize->add_setting(
+	'lat_map_api',
+	array(
+		'default'           => $default['lat_map_api'],
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_text_field',
+	)
+);
+
+$wp_customize->add_control(
+	'lat_map_api',
+	array(
+		'label'    => esc_html__('Latitude', 'steduty'),
+		'section'  => 'steduty_map',
+		'type'     => 'number',
+		'priority' => 100,
+	)
+);
+
+$wp_customize->add_setting(
+	'long_map_api',
+	array(
+		'default'           => $default['long_map_api'],
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_text_field',
+	)
+);
+
+$wp_customize->add_control(
+	'long_map_api',
+	array(
+		'label'    => esc_html__('Longitude', 'steduty'),
+		'section'  => 'steduty_map',
+		'type'     => 'number',
+		'priority' => 100,
+	)
+);
 
 
+$wp_customize->add_setting(
+	'zoom_map_api',
+	array(
+		'default'           => $default['zoom_map_api'],
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_text_field',
+	)
+);
+
+$wp_customize->add_control(
+	'zoom_map_api',
+	array(
+		'label'    => esc_html__('Zoom', 'steduty'),
+		'section'  => 'steduty_map',
+		'type'     => 'number',
+		'priority' => 100,
+	)
+);
+
+$wp_customize->add_setting(
+	'width_map_api',
+	array(
+		'default'           => $default['width_map_api'],
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_text_field',
+	)
+);
+
+$wp_customize->add_control(
+	'width_map_api',
+	array(
+		'label'    => esc_html__('Width', 'steduty'),
+		'section'  => 'steduty_map',
+		'type'     => 'text',
+		'priority' => 100,
+	)
+);
+
+$wp_customize->add_setting(
+	'height_map_api',
+	array(
+		'default'           => $default['height_map_api'],
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_text_field',
+	)
+);
+
+$wp_customize->add_control(
+	'height_map_api',
+	array(
+		'label'    => esc_html__('Height', 'steduty'),
+		'section'  => 'steduty_map',
+		'type'     => 'text',
+		'priority' => 100,
+	)
+);
 
 
 
@@ -1455,7 +1558,17 @@ if (!function_exists('steduty_default_theme_options')) :
 
 		$defaults['header_right_logo'] = get_template_directory_uri().'/assets/images/logo_ucd.jpg';
 
+		// MAP
 
+		$defaults['long_map_api'] = -8.487396535918947;
+
+		$defaults['lat_map_api'] = 33.22643319218119;
+		
+		$defaults['zoom_map_api'] = 13;
+
+		$defaults['width_map_api']= '100%';
+		
+		$defaults['height_map_api']= '200px';
 
 
 
