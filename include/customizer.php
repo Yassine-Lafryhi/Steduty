@@ -1105,6 +1105,102 @@ function steduty_customize_register($wp_customize)
 
 
 
+// A WORD  THE TESTIMONY
+
+
+$wp_customize->add_section('steduty_the_testimony', array(
+	'title'          => esc_html__('The Testimony ', 'steduty'),
+	'description'    => '',
+	'priority'       => 100,
+	'capability'     => 'edit_theme_options',
+	'panel'      => 'theme_option_panel',
+));
+
+
+
+$wp_customize->add_setting(
+	'name_the_testimony',
+	array(
+		'default'           => 'TOUMI HICHAM',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_text_field',
+	)
+);
+
+$wp_customize->add_control(
+	'name_the_testimony',
+	array(
+		'label'    => esc_html__('The Name', 'steduty'),
+		'section'  => 'steduty_the_testimony',
+		'type'     => 'text',
+		'priority' => 100,
+	)
+);
+
+
+
+$wp_customize->add_setting(
+	'photo_the_testimony',
+	array(
+		'default'           => get_template_directory_uri().'/assets/images/testimony.jpg',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_text_field',
+	)
+);
+$wp_customize->add_control(
+	new WP_Customize_Image_Control(
+		$wp_customize,
+		'photo',
+		array(
+			'label'      => __( 'Upload The Photo', 'photo_testimony' ),
+			'description'    => 'It is recommended that the photo be square',
+			'section'    => 'steduty_the_testimony',
+			'settings'   => 'photo_the_testimony',
+		)
+	)
+);
+
+
+
+
+$wp_customize->add_setting(
+	'the_testimony',
+	array(
+		'default'           => '" Dans l\'ère de la technologie numérique et de la digitalisation de la formation. EST SIDI BENNOUR lance son nouveau site web. Ce portail est conçu pour vous rapprocher de votre institution, ses composantes, l\'organisation des études, les formations dispensées, et les diplômes délivrés. Le site présente de nombreuses nouveautés et offre aux visiteurs notamment les étudiants une expérience améliorée grâce à une navigation simplifiée et une utilisation intuitive. "',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_text_field',
+	)
+);
+
+$wp_customize->add_control(
+	'the_testimony',
+	array(
+		'label'    => esc_html__('The Testimony ', 'steduty'),
+		'section'  => 'steduty_the_testimony',
+		'type'     => 'textarea',
+		'priority' => 100,
+	)
+);
+
+
+$wp_customize->add_setting(
+	'job_testimony',
+	array(
+		'default'           => 'Chef de département Génie Informatique',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_text_field',
+	)
+);
+
+$wp_customize->add_control(
+	'job_testimony',
+	array(
+		'label'    => esc_html__('The  Job', 'steduty'),
+		'section'  => 'steduty_the_testimony',
+		'type'     => 'text',
+		'priority' => 100,
+	)
+);
 
 
 
@@ -1288,12 +1384,24 @@ if (!function_exists('steduty_default_theme_options')) :
 
 
 
-		// The Director
+		// The Director Word
 		$defaults['name_the_director'] = 'NAJIB SABIR';
 
 		$defaults['photo_the_director'] = get_template_directory_uri().'/assets/images/directeur.jpg';
 
 		$defaults['word_the_director'] = 'Notre objectif à l’EST- Sidi Bennour est d’offrir aux étudiants une formation supérieure de qualité, une ouverture sur la vie citoyenne ainsi que les moyens d’acquérir des savoir, des savoir-faire, des savoir-être et des compétences pour une insertion sociale et professionnelle.';
+
+
+		// The Tesimony Word
+		$defaults['name_the_testimony'] = 'TOUMI HICHAM';
+
+		$defaults['photo_the_testimony'] = get_template_directory_uri().'/assets/images/testimony.jpg';
+
+		$defaults['the_testimony'] = '" Dans l\'ère de la technologie numérique et de la digitalisation de la formation. EST SIDI BENNOUR lance son nouveau site web. Ce portail est conçu pour vous rapprocher de votre institution, ses composantes, l\'organisation des études, les formations dispensées, et les diplômes délivrés. Le site présente de nombreuses nouveautés et offre aux visiteurs notamment les étudiants une expérience améliorée grâce à une navigation simplifiée et une utilisation intuitive. "';
+
+		$defaults['job_testimony'] = 'Chef de département Génie Informatique';
+
+
 
 
 

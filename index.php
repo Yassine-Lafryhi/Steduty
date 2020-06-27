@@ -145,9 +145,7 @@ $sidebar_class = steduty_get_option('steduty_sidebar');
                     <section id="recent-posts-3" class="widget widget_recent_entries">
                         <img src="<?php echo steduty_get_option('photo_the_director');?>" class="rounded-circle" alt="Phot the Director" width="140px" height="236">
                         <div style="text-align: center">
-                            <h2> <?php
-                            echo steduty_get_option('name_the_director');
-                            ?></h2>
+                            <h2> <?php echo steduty_get_option('name_the_director');?></h2>
                         </div>
 
                         <h3 style="text-align:justify;">
@@ -179,9 +177,18 @@ $sidebar_class = steduty_get_option('steduty_sidebar');
                 <br>
                 <aside id="secondary" class="widget-area" role="complementary" aria-label="Blog Sidebar">
                     <section id="recent-posts-3" class="widget widget_recent_entries" style="text-align:justify;">
-                        <h3>" Dans l'ère de la technologie numérique et de la digitalisation de la formation. EST SIDI BENNOUR lance son nouveau site web. Ce portail est conçu pour vous rapprocher de votre institution, ses composantes, l'organisation des études, les formations dispensées, et les diplômes délivrés. Le site présente de nombreuses nouveautés et offre aux visiteurs notamment les étudiants une expérience améliorée grâce à une navigation simplifiée et une utilisation intuitive. "</h3>
-                        <div align="right">
-                            Pr <b>Y.Baddi</b> Chef de département Génie Informatique.
+                    <img src="<?php echo steduty_get_option('photo_the_testimony');?>" class="rounded-circle" alt="Phot the Testimony" width="140px" height="236">
+                        <div style="text-align: center">
+                            <h2> <?php echo steduty_get_option('name_the_testimony');?></h2>
+                        </div>    
+                    
+                    <h3> <?php
+                            echo steduty_get_option('the_testimony');
+                            ?></h3>
+                        <div style="float: right;font-style: italic;">
+                        <?php
+                            echo steduty_get_option('job_testimony');
+                            ?>
 
                         </div>
 
