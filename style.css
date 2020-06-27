@@ -6418,6 +6418,12 @@ body.zmm-open {
 
 /* Social Media  */
 
+#social_networks_icons{
+
+    font-size: x-large ;
+
+}
+
 
 .fa {
 
@@ -6426,7 +6432,6 @@ body.zmm-open {
     text-decoration: none;
     margin: 2px;
     height: 30px;
-    font-size: x-large !important;
     padding: 7px;
 
 }
@@ -6464,3 +6469,4 @@ body.zmm-open {
 
     color: white;
 }
+
