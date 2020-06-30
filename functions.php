@@ -1,8 +1,4 @@
 <?php
-if (version_compare($GLOBALS['wp_version'], '4.7-alpha', '<')) {
-    require get_template_directory() . '/include/back-compat.php';
-    return;
-}
 $steduty_theme_path = get_template_directory();
 require($steduty_theme_path . '/include/fonts.php');
 function steduty_setup()
@@ -108,24 +104,13 @@ function steduty_scripts()
     }
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css');
     wp_enqueue_style('steduty', get_stylesheet_uri());
-    wp_enqueue_style('fontawesome', get_template_directory_uri() . '/assets/css/font-awesome.css');
-    wp_enqueue_style('animate', get_template_directory_uri() . '/assets/css/animate.css');
     if (is_customize_preview()) {
-        wp_enqueue_style('steduty-ie9', get_theme_file_uri('/assets/css/ie9.css'), array('steduty-style'), '1.0');
-        wp_style_add_data('steduty-ie9', 'conditional', 'IE 9');
+
     }
-    wp_enqueue_style('steduty-ie8', get_theme_file_uri('/assets/css/ie8.css'), array('steduty-style'), '1.0');
-    wp_style_add_data('steduty-ie8', 'conditional', 'lt IE 9');
-    wp_enqueue_script('html5', get_theme_file_uri('/assets/js/html5.js'), array(), '3.7.3');
-    wp_script_add_data('html5', 'conditional', 'lt IE 9');
-    wp_enqueue_script('steduty-skip-link-focus-fix', get_theme_file_uri('/assets/js/skip-link-focus-fix.js'), array(), '1.0', true);
     $steduty_l10n = array(
         'quote' => steduty_get_svg(array('icon' => 'quote-right')),
     );
-    wp_enqueue_script('steduty-global', get_theme_file_uri('/assets/js/global.js'), array('jquery'), '1.0', true);
-    wp_enqueue_script('jquery-scrollto', get_theme_file_uri('/assets/js/jquery.scrollTo.js'), array('jquery'), '2.1.2', true);
     wp_enqueue_script('bootstrap', get_theme_file_uri('/assets/js/bootstrap.js'), array('jquery'), '1.0', true);
-    wp_enqueue_script('jquery-easing', get_theme_file_uri('/assets/js/jquery.easing.js'), array('jquery'), '1.0', true);
     wp_enqueue_script('steduty-theme', get_theme_file_uri('/assets/js/theme.js'), array('jquery'), '1.0', true);
     wp_localize_script('steduty-skip-link-focus-fix', 'stedutyScreenReaderText', $steduty_l10n);
     if (is_singular() && comments_open() && get_option('thread_comments')) {

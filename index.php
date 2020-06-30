@@ -14,6 +14,7 @@ $sidebar_class = steduty_get_option('steduty_sidebar');
 <div id="content" class="site-content">
     <div class="container">
         <div class="row">
+            <?php $posts_per_page = get_option('posts_per_page'); ?>
             <div <?php if (get_theme_mod('home_sidebar') == true) : ?> class="col-md-6" <?php else : ?>class="col-md-6 <?php echo $sidebar_class; ?>" <?php endif; ?>>
                 <div id="primary" class="content-area">
                     <main id="main" class="site-main" role="main">
@@ -23,7 +24,9 @@ $sidebar_class = steduty_get_option('steduty_sidebar');
                                 $i = 0;
                                 while (have_posts()) : the_post();
                                     if ($i % 2 == 0) {
-                                        get_template_part('template-parts/post/content');
+                                        if ($i + 1 != $posts_per_page) {
+                                            get_template_part('template-parts/post/content');
+                                        }
                                     }
                                     $i++;
                                 endwhile;
@@ -31,10 +34,6 @@ $sidebar_class = steduty_get_option('steduty_sidebar');
                                 get_template_part('template-parts/post/content', 'none');
                             endif;
                             ?>
-                        </div>
-                        <div class="pagination-wrap">
-                            <?php the_posts_pagination(); ?>
-
                         </div>
                     </main>
                 </div>
@@ -57,12 +56,41 @@ $sidebar_class = steduty_get_option('steduty_sidebar');
                             endif;
                             ?>
                         </div>
+                    </main>
+                </div>
+            </div>
+
+
+            <div style="margin-top: 26px; <?php if($posts_per_page%2==0) echo ' display: none;'?>" <?php if (get_theme_mod('home_sidebar') == true) : ?> class="col-md-12" <?php else : ?>class="col-md-12 <?php echo $sidebar_class; ?>" <?php endif; ?>>
+                <div id="primary" class="content-area">
+                    <main id="main" class="site-main" role="main">
+                        <div class="steduty-post-grid row">
+                            <?php
+                            if (have_posts()) :
+                                while (have_posts()) : the_post();
+                                endwhile;
+                                get_template_part('template-parts/post/content');
+                            else :
+                                get_template_part('template-parts/post/content', 'none');
+                            endif;
+                            ?>
+                        </div>
+                    </main>
+                </div>
+            </div>
+
+
+            <div <?php if (get_theme_mod('home_sidebar') == true) : ?> class="col-md-12" <?php else : ?>class="col-md-12 <?php echo $sidebar_class; ?>" <?php endif; ?>>
+                <div id="primary" class="content-area">
+                    <main id="main" class="site-main" role="main">
                         <div class="pagination-wrap">
                             <?php the_posts_pagination(); ?>
                         </div>
                     </main>
                 </div>
             </div>
+
+
             <?php if (get_theme_mod('home_sidebar') == false) : ?>
                 <div class="col-md-4">
                     <?php get_sidebar(); ?>
@@ -141,7 +169,7 @@ $sidebar_class = steduty_get_option('steduty_sidebar');
 ">
                             <span class="counter-icon"> <i class="fa fa-users" style="
     color: #009688;
-     width: 80px; 
+     width: 80px;
     font-size: 48px;
     /* font-family: 'Quicksand', sans-serif; */
 "></i> </span><br><span id="etudiants" class="counter" style="
@@ -164,7 +192,7 @@ $sidebar_class = steduty_get_option('steduty_sidebar');
 ">
                             <span class="counter-icon"> <i class="fa fa-graduation-cap" style="
     color: #009688;
-     width: 80px; 
+     width: 80px;
     font-size: 48px;
     /* font-family: 'Quicksand', sans-serif; */
 "></i> </span><br><span id="laureats" class="counter" style="
@@ -186,7 +214,7 @@ $sidebar_class = steduty_get_option('steduty_sidebar');
 ">
                             <span class="counter-icon"> <i class="fa fa-university" style="
     color: #009688;
-     width: 80px; 
+     width: 80px;
     font-size: 48px;
     /* font-family: 'Quicksand', sans-serif; */
 "></i> </span><br><span id="departements" class="counter" style="
@@ -208,7 +236,7 @@ $sidebar_class = steduty_get_option('steduty_sidebar');
 ">
                             <span class="counter-icon"> <i class="fa fa-user" style="
     color: #009688;
-     width: 80px; 
+     width: 80px;
     font-size: 48px;
     /* font-family: 'Quicksand', sans-serif; */
 "></i> </span><br><span id="enseignants" class="counter" style="
