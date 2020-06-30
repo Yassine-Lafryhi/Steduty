@@ -7,9 +7,9 @@ $estsb_logo = get_template_directory_uri() . '/assets/images/logo_estsb.jpg';
             <div class="col-sm-3" id="text_footer">
                 <h2><?php bloginfo('name'); ?></h2>
                 <p>
-                    Adresse : <?php echo steduty_get_option('address_text'); ?><br>
-                    Téléphone : <?php echo steduty_get_option('phone_text'); ?><br>
-                    Fax : <?php echo steduty_get_option('fax_text'); ?>
+                    <b>Adresse : </b><?php echo steduty_get_option('address_text'); ?><br>
+                    <b>Téléphone : </b><?php echo steduty_get_option('phone_text'); ?><br>
+                    <b>Fax : </b><?php echo steduty_get_option('fax_text'); ?>
                 </p>
             </div>
             <div class="col-sm-3" id="text_footer">

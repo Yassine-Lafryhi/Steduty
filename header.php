@@ -1,6 +1,3 @@
-<?php
-$header_status = steduty_get_option('show_top_header');
-?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 
@@ -30,9 +27,10 @@ $header_status = steduty_get_option('show_top_header');
         </div>
         <header id="masthead" class="site-header" role="banner">
             <div class="header-wrapper">
+            <?php if (steduty_get_option('show_top_header')): ?>
                 <div class="top-header">
                     <div class="container ">
-                        <div class="row style="display: flex;">
+                        <div class="row style=" display: flex;">
                             <div class="col-md-6" id="col1">
 
 
@@ -62,7 +60,10 @@ $header_status = steduty_get_option('show_top_header');
 
                         </div>
                     </div>
+                            
                 </div>
+                <?php endif;?>
+                            
                 <div class="mobile-header">
                     <div class="container">
                         <div class="row">

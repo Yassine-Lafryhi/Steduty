@@ -1,3 +1,5 @@
+
+
 <img src="<?php echo steduty_get_option('header_left_logo'); ?>" width="230px" height="140px">
 <div class="site-branding">
     <?php if (has_custom_logo()) { ?>

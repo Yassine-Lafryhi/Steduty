@@ -67,6 +67,10 @@ function steduty_customize_register($wp_customize)
         )
     );
 
+
+   
+
+
     $wp_customize->add_setting(
         'header_right_logo',
         array(
@@ -86,6 +90,9 @@ function steduty_customize_register($wp_customize)
             )
         )
     );
+
+
+   
 
 
     /*Settings sidebar on front page*/
@@ -1282,7 +1289,8 @@ if (!function_exists('steduty_default_theme_options')) :
         $defaults = array();
 
         // Header.
-        $defaults['show_top_header'] = false;
+        $defaults['show_top_header'] = true;
+        
 
         // Post.
         $defaults['readmore_text'] = esc_html__('Read More', 'steduty');
