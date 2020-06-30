@@ -15,7 +15,7 @@
                         ?>
                     </main>
                 </div>
-            </div>s
+            </div>
             <?php if (get_theme_mod('pages_sidebar') == false) : ?>
                 <div class="col-md-4">
                     <?php get_sidebar(); ?>
