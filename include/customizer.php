@@ -707,7 +707,7 @@ function steduty_customize_register($wp_customize)
         array(
             'label' => esc_html__('School phone number :', 'steduty'),
             'section' => 'steduty_new_section_school_informations',
-            'type' => 'number',
+            'type' => 'text',
             'priority' => 100,
         )
     );
@@ -727,7 +727,7 @@ function steduty_customize_register($wp_customize)
         array(
             'label' => esc_html__('School fax :', 'steduty'),
             'section' => 'steduty_new_section_school_informations',
-            'type' => 'number',
+            'type' => 'text',
             'priority' => 100,
         )
     );

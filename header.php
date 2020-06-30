@@ -30,6 +30,39 @@ $header_status = steduty_get_option('show_top_header');
         </div>
         <header id="masthead" class="site-header" role="banner">
             <div class="header-wrapper">
+                <div class="top-header">
+                    <div class="container ">
+                        <div class="row style="display: flex;">
+                            <div class="col-md-6" id="col1">
+
+
+                                <i class="fa fa-phone" style="font-size: larger;" aria-hidden="true"></i>
+                                <h7 class="top-header-text"><?php echo steduty_get_option('fax_text'); ?></h7>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <h7 class="top-header-text">estsb@ucd.ac.ma</h7>
+
+                            </div>
+                            <div class="col-md-6" id="col2">
+                                <?php
+                                if (steduty_get_option('facebook_icon') == "show") {
+                                    echo "<a class='fa fa-facebook' id='social_networks_icons' href=" . steduty_get_option('facebook_link') . "></a>";
+                                }
+                                if (steduty_get_option('twitter_icon') == "show") {
+                                    echo "<a class='fa fa-twitter' id='social_networks_icons'  href=" . steduty_get_option('twitter_link') . "></a>";
+                                }
+                                if (steduty_get_option('instagram_icon') == "show") {
+                                    echo "<a class='fa fa-instagram' id='social_networks_icons'  href=" . steduty_get_option('instagram_link') . "></a>";
+                                }
+                                if (steduty_get_option('youtube_icon') == "show") {
+                                    echo "<a class='fa fa-youtube' id='social_networks_icons' href=" . steduty_get_option('youtube_link') . "></a>";
+                                }
+                                ?>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
                 <div class="mobile-header">
                     <div class="container">
                         <div class="row">
@@ -57,61 +90,8 @@ $header_status = steduty_get_option('show_top_header');
                         </div>
                     </div>
                 </div>
-                <div class="header-top">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12">
-                                <div class="navigation-section">
-                                    <nav id="site-navigation" class="main-navigation" role="navigation">
-                                        <div class="menu-top-header-menu-container">
-                                            <ul id="top-header" class="main-menu">
-                                                <li id="menu-item-105" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-105">
-                                                    <a title="" href="#">Accueil</a></li>
-                                                <li id="menu-item-104" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-104">
-                                                    <a title="" href="#">Bibliothèque</a></li>
-                                                <li id="menu-item-106" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-106">
-                                                    <a title="" href="#">Bureau Des Étudiants</a></li>
-                                                <li id="menu-item-115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115">
-                                                    <a title="" href="#">Clubs De L'<?php bloginfo('name'); ?></a></li>
-                                            </ul>
-                                        </div>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12 social-links">
-                                <div class="menu-social-container">
-                                    <ul id="social" class="social-info list-inline">
-                                        <?php
-                                        if (steduty_get_option('facebook_icon') == "show") {
-                                            echo "<a class='fa fa-facebook' id='social_networks_icons' href=" . steduty_get_option('facebook_link') . "></a>";
-                                        }
-                                        if (steduty_get_option('twitter_icon') == "show") {
-                                            echo "<a class='fa fa-twitter' id='social_networks_icons'  href=" . steduty_get_option('twitter_link') . "></a>";
-                                        }
-                                        if (steduty_get_option('instagram_icon') == "show") {
-                                            echo "<a class='fa fa-instagram' id='social_networks_icons'  href=" . steduty_get_option('instagram_link') . "></a>";
-                                        }
-                                        if (steduty_get_option('youtube_icon') == "show") {
-                                            echo "<a class='fa fa-youtube' id='social_networks_icons' href=" . steduty_get_option('youtube_link') . "></a>";
-                                        }
-                                        ?>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <?php if ($header_status == '1') : ?>
-                    <div class="header-top">
-                        <div class="container">
-                            <div class="row">
-                                <?php do_action('steduty_top_header_menu');
-                                do_action('steduty_top_header_social_icon');
-                                ?>
-                            </div>
-                        </div>
-                    </div>
-                <?php endif; ?>
+
+
                 <div class="header-logo">
                     <div class="container">
                         <div class="row">

@@ -6470,3 +6470,45 @@ body.zmm-open {
     color: white;
 }
 
+
+
+.top-header{
+    
+    background-color:#009688;
+    color: aliceblue;
+    
+}
+
+
+.top-header-text{
+
+    font-size: larger;
+    font-weight: 600;
+    font-family: initial;
+}
+
+#col1{
+    text-align: start;
+    margin-top: auto;
+}
+
+#col2{
+    text-align: end;
+}
+
+
+
+
+@media screen and (max-width:768px){
+
+    #col1{
+        text-align: center;
+        margin-top: auto;
+    }
+    
+    #col2{
+        text-align: center;
+    }
+    
+
+}
